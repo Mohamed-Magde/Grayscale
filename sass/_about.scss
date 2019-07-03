@@ -1,0 +1,63 @@
+.about {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, .9)), to(rgba(22, 22, 22, .8)));
+  background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
+
+
+  .container {
+    background-color: transparent;
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    text-align: center;
+
+
+    .about-text {
+      margin-top: 6.5em;
+      display: grid;
+      grid-gap: 3em;
+      align-self: center;
+
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 8em;
+        height: 3px;
+        bottom: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $primary;
+      }
+    }
+
+
+    figure {
+      align-self: flex-end;
+
+      img {
+        object-fit: fill;
+      }
+    }
+
+  }
+
+
+}
+
+@media screen and (max-width : 900px) {
+  .about {
+    height: 50vh;
+  }
+
+  .heading-2 {
+    font-family: 'Varela Round';
+    font-size: 2rem;
+
+    font-weight: 300;
+    color: #fff;
+  }
+}

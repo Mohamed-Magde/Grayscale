@@ -1,0 +1,201 @@
+.contact {
+  width: 100%;
+  padding: 4em;
+  background-image: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%),
+    url(../img/bg-signup.jpg);
+
+  .container {
+    display: grid;
+    grid-template-rows: 2fr 2fr 0.5fr 0.5fr;
+    text-align: center;
+    grid-gap: 5em;
+
+    .search {
+      align-self: center;
+      justify-self: center;
+
+      .heading-2 {
+        margin-bottom: 1.3em;
+      }
+
+      input {
+        padding: 1.2em 10em;
+        border-radius: 10px;
+        border: 1px solid $primary;
+        margin-right: .5em;
+      }
+
+      .btn-primary {
+        display: inline-block;
+        border-radius: 10px;
+      }
+    }
+
+    .contact-gird {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em;
+
+
+      &-block {
+        padding: 1em 0;
+        background-color: #fff;
+        color: black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        i,
+        span {
+          color: $primary;
+        }
+
+        i {
+          font-size: 2rem;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            background-color: $primary;
+            bottom: -2.1em;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1.5em;
+            height: 2px;
+            ;
+          }
+        }
+
+        border-bottom: 5px solid $primary;
+
+      }
+    }
+
+    .socail {
+      a {
+        text-decoration: none;
+        color: #161616;
+        margin-right: 0.5em;
+
+
+        i {
+          padding: 1em;
+          border-radius: 50%;
+          background-color: lighten($color: #161616, $amount: 20);
+          transition: all 0.5s;
+
+          &:hover {
+            background-color: lighten($color: #161616, $amount: 30);
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width : 1024px) {
+
+  .contact {
+    width: 100%;
+    padding: 3em;
+    background-image: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%),
+      url(../img/bg-signup.jpg);
+
+    .container {
+      display: grid;
+      grid-template-rows: 2fr 5fr 1fr 0.5fr;
+      text-align: center;
+      grid-gap: 5em;
+
+      .search {
+        align-self: center;
+        justify-self: center;
+
+        .heading-2 {
+          margin-bottom: 1.3em;
+        }
+
+        input {
+          padding: 1em 4em;
+          border-radius: 10px;
+          border: 1px solid $primary;
+          margin-bottom: .5em;
+        }
+
+        .btn-primary {
+          display: inline-block;
+          border-radius: 10px;
+        }
+      }
+
+      .contact-gird {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+
+
+        &-block {
+          padding: 1em 0;
+          background-color: #fff;
+          color: black;
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          i,
+          span {
+            color: $primary;
+          }
+
+          i {
+            font-size: 2rem;
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              background-color: $primary;
+              bottom: -2.1em;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 1.5em;
+              height: 2px;
+              ;
+            }
+          }
+
+          border-bottom: 5px solid $primary;
+
+        }
+      }
+
+      .socail {
+        a {
+          text-decoration: none;
+          color: #161616;
+          margin-right: 0.5em;
+
+
+          i {
+            padding: 1em;
+            border-radius: 50%;
+            background-color: lighten($color: #161616, $amount: 20);
+            transition: all 0.5s;
+
+            &:hover {
+              background-color: lighten($color: #161616, $amount: 30);
+
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

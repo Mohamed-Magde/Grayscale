@@ -1,0 +1,89 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba($black, .7), rgba($black, .3)),
+    url(../img/bg-masthead.jpg);
+  background-position: center;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin-bottom: 1.5em;
+    }
+  }
+}
+
+
+@media screen and (max-width : 900px) {
+
+
+  html {
+    font-size: 11px;
+  }
+
+
+  .header {
+    width: 100%;
+    height: 50vh;
+    padding: 1em;
+
+    background-image: linear-gradient(to bottom, rgba($black, .7), rgba($black, .3)),
+      url(../img/bg-masthead.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+
+
+      p {
+        margin-bottom: 1.2em;
+
+      }
+    }
+
+    .heading-1 {
+      font-family: 'Varela Round';
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+      font-weight: 300;
+      background: -webkit-linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0));
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      margin-bottom: 0.3em;
+    }
+
+  }
+
+
+}
+
+
+
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #161616 !default;
+
+$primary: #64a19d !default;

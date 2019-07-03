@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+h1,
+h2,
+h3,
+p {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: $gray-900;
+  color: #ffffff80 !important;
+  font-size: 1rem;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+///// typography
+.heading-1 {
+  font-family: 'Varela Round';
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 0.3em;
+}
+
+
+.heading-2 {
+  font-family: 'Varela Round';
+  font-size: 3rem;
+
+  font-weight: 300;
+  color: #fff;
+}
+
+.heading-3 {
+  font-family: 'Varela Round';
+  font-size: 1.6rem;
+  margin-bottom: 1em;
+  font-weight: 300;
+  color: #000;
+}
+
+.heading-3-white {
+  font-family: 'Varela Round';
+  font-size: 1.6rem;
+  margin-bottom: 1em;
+  font-weight: 300;
+  color: #fff;
+}
+
+//// buttons
+.btn-primary {
+  padding: 1em 2em;
+  background-color: $primary;
+  margin-top: 0.4em;
+  display: block;
+
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: darken($primary, 5%);
+    box-shadow: 0 0 1em rgba(#000, 0.25);
+  }
+}
